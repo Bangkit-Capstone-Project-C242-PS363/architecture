@@ -36,8 +36,8 @@ Linux users are used to read the documentation, right? :D. so I will not provide
 ```bash
 gcloud auth application-default login #for the first time only
 
-mkdir <folderApaPun>
-gcsfuse <folderApaPun> bucket-asl-model
+mkdir deployModel
+gcsfuse deployModel bucket-asl-model
 ```
 
 ### another option
