@@ -29,7 +29,7 @@ use this [msi](https://github.com/weswu8/gcsfuse-win) file to install gcsfuse on
 
 #### for linux users
 
-Linux users are used to read the documentation, right? :D. so I will not provide the command here.
+Linux users are used to read a lot of documentations, right? :D. so I will not provide the command here.
 
 ### mount bucket
 
