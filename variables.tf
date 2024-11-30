@@ -9,3 +9,15 @@ variable "region" {
   default     = "asia-southeast2"
   type        = string
 }
+
+variable "db_username" {
+  description = "admin"
+  type        = string
+  sensitive   = true
+}
+
+variable "db_password" {
+  description = "Database password"
+  type        = string
+  sensitive   = true
+}
