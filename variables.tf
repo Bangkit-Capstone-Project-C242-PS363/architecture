@@ -21,3 +21,9 @@ variable "db_password" {
   type        = string
   sensitive   = true
 }
+
+variable "db_database" {
+  description = "Database name"
+  type        = string
+  sensitive   = true
+}
