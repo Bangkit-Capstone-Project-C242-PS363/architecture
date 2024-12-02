@@ -4,6 +4,12 @@ variable "bucket_model" {
   default     = "bucket-asl-model"
 }
 
+variable "bucket_data" {
+  description = "The name of the bucket to store the dataset"
+  type        = string
+  default     = "bucket-asl-data"
+}
+
 variable "ml_dev_emails" {
   description = "List of email addresses to grant bucket access"
   type        = list(string)
@@ -23,6 +29,12 @@ resource "google_storage_bucket" "bucket_asl_model" {
       type = "Delete"
     }
   }
+}
+
+resource "google_storage_bucket" "bucket_asl_data" {
+  name          = var.bucket_data
+  force_destroy = false # Prevent accidental deletion of the bucket
+  location      = var.region
 }
 
 resource "google_storage_bucket_iam_member" "model_bucket_admin" {
