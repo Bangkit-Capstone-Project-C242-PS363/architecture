@@ -10,6 +10,12 @@ variable "region" {
   type        = string
 }
 
+variable "zone" {
+  description = "The zone to create the project in"
+  default     = "asia-southeast2-c"
+  type        = string
+}
+
 variable "db_username" {
   description = "admin"
   type        = string
